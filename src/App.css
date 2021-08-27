@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+html,
+body,
+.App,
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Nunito", cursive;
+  text-align: center;
+  background-image: -o-linear-gradient(315deg, #52a7ec, #61f4ff);
+  background-image: linear-gradient(135deg, #52aeec, #61daff);
+  padding: 32px;
+  letter-spacing: 2px;
+}
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.note {
+  background: #ffba3a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 16px auto;
+  text-align: left;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  width: 250px;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8052ec;
+}
+
+button {
+  position: relative;
+  float: right;
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 30px;
+  background-color: #ff3a7c;
+  color: #faf6f6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12),
+    0 2px 3px 2px rgba(0, 0, 0, 0.24);
+  background: #322081;
+}
+button:active {
+  background: #ff7eb9;
+  box-shadow: inset 0px 0px 5px #ff65a3;
+  outline: none;
+}
+
+label {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-left: -60px;
+  text-align: left;
+  width: 200px;
+  color: white;
+}
+
+.title {
+  color: black;
+}
